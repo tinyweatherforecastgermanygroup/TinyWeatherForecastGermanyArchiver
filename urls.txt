@@ -1,0 +1,13 @@
+https://tinyweatherforecastgermanygroup.gitlab.io/index/index.html
+https://twfgcicdbot.github.io/TinyWeatherForecastGermanyScan/index.html
+https://twfgcicdbot.github.io/TinyWeatherForecastGermanyScan/analysis-result.json
+https://twfgcicdbot.github.io/TinyWeatherForecastGermanyScan/tracker-signatures.json
+https://tinyweatherforecastgermanygroup.frama.io/
+https://tinyweatherforecastgermanygroup.frama.io/de/
+https://tinyweatherforecastgermanygroup.frama.io/fr/
+https://codeberg.org/Starfish/TinyWeatherForecastGermany/
+https://codeberg.org/Starfish/TinyWeatherForecastGermany/issues
+https://codeberg.org/Starfish/TinyWeatherForecastGermany/releases
+https://f-droid.org/packages/de.kaffeemitkoffein.tinyweatherforecastgermany/
+https://eugentoptic44.codeberg.page/
+https://eUgEntOptIc44.gitlab.io/
