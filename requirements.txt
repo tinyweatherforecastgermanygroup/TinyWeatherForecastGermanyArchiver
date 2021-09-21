@@ -1,0 +1,2 @@
+requests==2.26.0
+wayback-machine-archiver==1.9.1
