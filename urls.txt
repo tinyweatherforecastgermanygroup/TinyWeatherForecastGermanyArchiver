@@ -8,6 +8,10 @@ https://tinyweatherforecastgermanygroup.frama.io/fr/
 https://codeberg.org/Starfish/TinyWeatherForecastGermany/
 https://codeberg.org/Starfish/TinyWeatherForecastGermany/issues
 https://codeberg.org/Starfish/TinyWeatherForecastGermany/releases
-https://f-droid.org/packages/de.kaffeemitkoffein.tinyweatherforecastgermany/
+https://f-droid.org/packages/de.kaffeemitkoffein.tinyweatherforecastgermany
 https://eugentoptic44.codeberg.page/
+https://eugentoptic44.codeberg.page/snippets/
 https://eUgEntOptIc44.gitlab.io/
+https://eUgEntOptIc44.gitlab.io/snippets/
+https://github.com/tinyweatherforecastgermanygroup
+https://github.com/tinyweatherforecastgermanygroup/TinyWeatherForecastGermany
