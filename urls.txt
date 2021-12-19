@@ -15,3 +15,7 @@ https://eUgEntOptIc44.gitlab.io/
 https://eUgEntOptIc44.gitlab.io/snippets/
 https://github.com/tinyweatherforecastgermanygroup
 https://github.com/tinyweatherforecastgermanygroup/TinyWeatherForecastGermany
+https://gitlab.com/tinyweatherforecastgermanygroup
+https://weblate.bubu1.eu/engage/tiny-weather-forecast-germany/
+https://weblate.bubu1.eu/projects/tiny-weather-forecast-germany/
+https://weblate.bubu1.eu/projects/tiny-weather-forecast-germany/app-strings/
