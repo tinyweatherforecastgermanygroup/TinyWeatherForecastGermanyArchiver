@@ -9,7 +9,7 @@ tl;dr -> submit web sites ([`urls.txt`](https://github.com/tinyweatherforecastge
 The DWD is Germany's **national weather agency** (similiar to **N**ational **O**ceanic **a**nd **A**tmospheric **A**dministration ([NOAA](https://www.noaa.gov/about-our-agency)) in the US).
 
 **Note**:
-* *'TWFG'* is an unofficial abbreviation for ***T**iny **W**eather **F**orecast **G**ermany.*
+* *'TWFG'* is an inofficial abbreviation for ***T**iny **W**eather **F**orecast **G**ermany.*
 * *[ExodusPrivacy](https://github.com/Exodus-Privacy)* also partially uses the alternative spelling *'εxodus'*. To maintain readability the author sticks to the first version without the leading greek character.
 
 ## Dependencies
