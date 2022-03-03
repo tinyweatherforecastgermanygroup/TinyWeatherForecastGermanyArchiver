@@ -1,4 +1,9 @@
 https://tinyweatherforecastgermanygroup.gitlab.io/index/index.html
+https://tinyweatherforecastgermanygroup.gitlab.io/index/areas.html
+https://tinyweatherforecastgermanygroup.gitlab.io/index/stations.html
+https://tinyweatherforecastgermanygroup.gitlab.io/index/stargazers.html
+https://tinyweatherforecastgermanygroup.gitlab.io/index/watchers.html
+https://tinyweatherforecastgermanygroup.gitlab.io/index/map.html
 https://twfgcicdbot.github.io/TinyWeatherForecastGermanyScan/index.html
 https://twfgcicdbot.github.io/TinyWeatherForecastGermanyScan/analysis-result.json
 https://twfgcicdbot.github.io/TinyWeatherForecastGermanyScan/tracker-signatures.json
