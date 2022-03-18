@@ -10,12 +10,14 @@ https://twfgcicdbot.github.io/TinyWeatherForecastGermanyScan/tracker-signatures.
 https://tinyweatherforecastgermanygroup.frama.io/
 https://tinyweatherforecastgermanygroup.frama.io/de/
 https://tinyweatherforecastgermanygroup.frama.io/fr/
+https://tinyweatherforecastgermanygroup.frama.io/licenses/
 https://codeberg.org/Starfish/TinyWeatherForecastGermany/
 https://codeberg.org/Starfish/TinyWeatherForecastGermany/issues
 https://codeberg.org/Starfish/TinyWeatherForecastGermany/releases
 https://f-droid.org/packages/de.kaffeemitkoffein.tinyweatherforecastgermany
 https://eugentoptic44.codeberg.page/
 https://eugentoptic44.codeberg.page/snippets/
+https://eugentoptic44.codeberg.page/licenses/
 https://eUgEntOptIc44.gitlab.io/
 https://eUgEntOptIc44.gitlab.io/snippets/
 https://github.com/tinyweatherforecastgermanygroup
