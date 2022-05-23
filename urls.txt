@@ -27,3 +27,4 @@ https://gitlab.com/tinyweatherforecastgermanygroup
 https://weblate.bubu1.eu/engage/tiny-weather-forecast-germany/
 https://weblate.bubu1.eu/projects/tiny-weather-forecast-germany/
 https://weblate.bubu1.eu/projects/tiny-weather-forecast-germany/app-strings/
+https://tinyweatherforecastgermanygroup.github.io/statuspage/
