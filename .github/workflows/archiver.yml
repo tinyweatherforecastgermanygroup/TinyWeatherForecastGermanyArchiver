@@ -9,7 +9,7 @@ on:
   pull_request:
     branches: [ main ]
   schedule:
-    - cron: "5 2,18 * * *" # daily 2:05am UTC
+    - cron: "5 2 * * *" # daily 2:05am UTC
   
   repository_dispatch: # run workflow on api request
 
