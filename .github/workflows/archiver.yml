@@ -58,7 +58,7 @@ jobs:
       - name: install python requirements
         run: pip install -r TinyWeatherForecastGermanyArchiver/requirements.txt
       
-      - name: run wayback-machine-archiver
+      - name: run async wayback machine archiver script
         run: timeout 5m python TinyWeatherForecastGermanyArchiver/__init__.py || true
 
       - name: list directory contents
