@@ -1,2 +1,2 @@
 requests==2.28.1
-wayback-machine-archiver==1.9.1
+aiohttp==3.8.3

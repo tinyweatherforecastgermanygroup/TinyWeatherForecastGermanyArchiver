@@ -32,8 +32,10 @@ jobs:
       - name: update packages
         run: sudo apt-get update && sudo apt-get upgrade
       
-      - name: Setup Python 3.x
-        uses: actions/setup-python@v2.2.2
+      - name: Setup Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
       
       - name: upgrade pip
         run: python -m pip install --upgrade pip
@@ -57,7 +59,7 @@ jobs:
         run: pip install -r TinyWeatherForecastGermanyArchiver/requirements.txt
       
       - name: run wayback-machine-archiver
-        run: archiver --file 'TinyWeatherForecastGermanyArchiver/urls.txt' --log DEBUG || true
+        run: timeout 5m python TinyWeatherForecastGermanyArchiver/__init__.py || true
 
       - name: list directory contents
         run: ls -lisha
