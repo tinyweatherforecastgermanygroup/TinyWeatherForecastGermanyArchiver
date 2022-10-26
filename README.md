@@ -2,7 +2,7 @@
 
 [![archiver](https://img.shields.io/github/workflow/status/tinyweatherforecastgermanygroup/TinyWeatherForecastGermanyArchiver/archiver?label=archiver%20workflow&logo=github&style=for-the-badge)](https://github.com/tinyweatherforecastgermanygroup/TinyWeatherForecastGermanyArchiver/actions/workflows/archiver.yml)  [![F-Droid Store release version](https://img.shields.io/f-droid/v/de.kaffeemitkoffein.tinyweatherforecastgermany?color=%23efbb24&logo=fdroid&style=for-the-badge)](https://f-droid.org/packages/de.kaffeemitkoffein.tinyweatherforecastgermany) [![code license](https://img.shields.io/github/license/twfgcicdbot/TinyWeatherForecastGermanyMirror?style=for-the-badge&logo=github)](https://github.com/twfgcicdbot/TinyWeatherForecastGermanyMirror/blob/master/COPYING)
 
-tl;dr -> submit web sites ([`urls.txt`](https://github.com/tinyweatherforecastgermanygroup/TinyWeatherForecastGermanyArchiver/blob/1b967e16cc49e23de9a526b753cb9144331b36a6/urls.txt)) of  [**TinyWeatherForecastGermany**](https://codeberg.org/Starfish/TinyWeatherForecastGermany) (TWFG) to `web.archive.org`.
+tl;dr -> submit web sites ([`urls.txt`](https://github.com/tinyweatherforecastgermanygroup/TinyWeatherForecastGermanyArchiver/blob/main/urls.txt)) of  [**TinyWeatherForecastGermany**](https://codeberg.org/Starfish/TinyWeatherForecastGermany) (TWFG) to `web.archive.org`.
 
 [Tiny Weather Forecast Germany](https://tinyweatherforecastgermanygroup.gitlab.io/index/) is an android open source weather app focused on Germany developped by Pawel Dube ([@Starfish](https://codeberg.org/Starfish)) using [open data](https://opendata.dwd.de/) provided by Deutscher Wetterdienst (DWD).
 
@@ -14,7 +14,7 @@ The DWD is Germany's **national weather agency** (similiar to the **N**ational *
 
 ## Dependencies
 
-* see [`requirements.txt`](https://github.com/tinyweatherforecastgermanygroup/TinyWeatherForecastGermanyArchiver/blob/1b967e16cc49e23de9a526b753cb9144331b36a6/requirements.txt) for Python dependencies
+* see [`requirements.txt`](https://github.com/tinyweatherforecastgermanygroup/TinyWeatherForecastGermanyArchiver/blob/main/requirements.txt) for Python dependencies
 
 ## License and Copyright
 
@@ -34,7 +34,7 @@ This project is **not affialited** with any of the following organizations: Code
 ## Contributing
 
 * All contributions to **Tiny Weather Forecast Germany** are managed at the ['main'](https://codeberg.org/Starfish/TinyWeatherForecastGermany) code repository at [codeberg.org](https://codeberg.org/Starfish/TinyWeatherForecastGermany)
-* [**Translations**](https://weblate.bubu1.eu/engage/tiny-weather-forecast-germany/) are managed at the [**weblate** instance](https://weblate.bubu1.eu/projects/tiny-weather-forecast-germany/) provided by Marcus Hoffmann (@Bubu).
+* [**Translations**](https://translate.codeberg.org/engage/tiny-weather-forecast-germany/) are managed on the [**weblate** server](https://translate.codeberg.org/projects/tiny-weather-forecast-germany/) provided by Codeberg e.V.
 * Feel free to contribute to this script by opening issues and/or merge requests.
 * Please also see the automatically generated *javadoc* **code documentation** of Tiny Weather Forecast Germany [at GitLab](https://gitlab.com/tinyweatherforecastgermanygroup/twfg-javadoc).
 * For cybersec, privacy and/or copyright related issues regarding this repository please directly contact the maintainer [**Jean-Luc Tibaux**](https://codeberg.org/eUgEntOptIc44) or our [CI/CD bot](https://github.com/twfgcicdbot).
