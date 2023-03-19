@@ -7,11 +7,14 @@ from pathlib import Path
 
 import aiohttp
 
+parent_p = Path(__file__).parent
+log_p = parent_p / "debug.log"
+
 try:
     logging.basicConfig(format='%(asctime)-s %(levelname)s [%(name)s]: %(message)s',
         level=logging.DEBUG,
         handlers=[
-            logging.FileHandler("debug.log", encoding="utf-8"),
+            logging.FileHandler(log_p, encoding="utf-8"),
             logging.StreamHandler()
     ])
 except Exception as e:
@@ -20,7 +23,7 @@ except Exception as e:
 start_time = time.time()
 
 async def main():
-    urls_p = Path(__file__).parent / 'urls.txt'
+    urls_p = parent_p / 'urls.txt'
 
     with open(urls_p, 'r', encoding='utf-8') as fh:
         urls_raw = str(fh.read())
@@ -39,7 +42,8 @@ async def main():
             #break
 
 try:
-    with open('lastmod.txt', 'w+', encoding='utf-8') as fh:
+    lastmod_p = parent_p / "lastmod.txt"
+    with open(lastmod_p, 'w+', encoding='utf-8') as fh:
         fh.write(str(datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
 except Exception as e:
     logging.error(f"failed to write to lastmod.txt -> error: {e}")

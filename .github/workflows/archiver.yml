@@ -34,6 +34,7 @@ jobs:
         with:
           python-version: '3.11'
           cache: 'pip'
+          token: ${{ secrets.GITHUB_TOKEN }}
           # cache-dependency-path: requirements.txt
       
       - name: upgrade pip
@@ -66,6 +67,7 @@ jobs:
       - name: git push to origin
         run: |
           cd TinyWeatherForecastGermanyArchiver
+          ls -lisha
           git config --local user.name twfgcicdbot
           git config --local user.email twfgcicdbot@outlook.com
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
