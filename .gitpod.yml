@@ -1,7 +1,8 @@
 tasks:
-- init: sudo apt update -y && sudo apt upgrade -y && virtualenv venv && source venv/bin/activate && python -m pip install --upgrade pip && pip install -r requirements.txt
+- init: sudo apt update && sudo apt upgrade -y && virtualenv venv && source venv/bin/activate && python -m pip install --upgrade pip && pip install -r requirements.txt
 vscode:
   extensions:
     - ms-python.python
-    - ms-toolsai.jupyter
+    - SonarSource.sonarlint-vscode
+    - charliermarsh.ruff
     - eamodio.gitlens
