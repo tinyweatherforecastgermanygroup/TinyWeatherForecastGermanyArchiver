@@ -24,12 +24,17 @@ jobs:
         run: git clone https://github.com/tinyweatherforecastgermanygroup/TinyWeatherForecastGermanyArchiver "TinyWeatherForecastGermanyArchiver"
       
       - name: update packages
-        run: sudo apt-get update && sudo apt-get upgrade
+        run: timeout 120s sudo apt update
+
+      - name: upgrade packages
+        run: timeout 120s sudo apt upgrade -y
       
-      - name: Setup Python 3.10
+      - name: Setup Python 3.11
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: requirements.txt
       
       - name: upgrade pip
         run: python -m pip install --upgrade pip
@@ -57,3 +62,17 @@ jobs:
 
       - name: list directory contents
         run: ls -lisha
+
+      - name: git push to origin
+        run: |
+          cd TinyWeatherForecastGermanyArchiver
+          git config --local user.name twfgcicdbot
+          git config --local user.email twfgcicdbot@outlook.com
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+          git fetch --all
+          git checkout main
+          git reset
+          git add lastmod.txt
+          git status
+          git commit -m "archived urls" || true
+          git push -f origin main || true
