@@ -1,8 +1,21 @@
-import aiohttp
 import asyncio
-from pathlib import Path
-import time
+import logging
 import random
+import time
+from datetime import datetime
+from pathlib import Path
+
+import aiohttp
+
+try:
+    logging.basicConfig(format='%(asctime)-s %(levelname)s [%(name)s]: %(message)s',
+        level=logging.DEBUG,
+        handlers=[
+            logging.FileHandler("debug.log", encoding="utf-8"),
+            logging.StreamHandler()
+    ])
+except Exception as e:
+    logging.error(f"while logger init! -> error: {e}")
 
 start_time = time.time()
 
@@ -21,9 +34,16 @@ async def main():
             async with session.get(archive_url) as resp:
                 req_status = resp.status
                 archive_resp = await resp.text()
-                print(f'({url_index+1}.) {archive_url} -> {req_status}')
+                logging.debug(f'({url_index+1}.) {archive_url} -> {req_status}')
         
             #break
 
 asyncio.run(main())
-print("INFO: completed run after %s seconds" % (time.time() - start_time))
+
+try:
+    with open('lastmod.txt', 'w+', encoding='utf-8') as fh:
+        fh.write(str(datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
+except Exception as e:
+    logging.error(f"failed to write to lastmod.txt -> error: {e}")
+
+logging.info("INFO: completed run after %s seconds" % (time.time() - start_time))
