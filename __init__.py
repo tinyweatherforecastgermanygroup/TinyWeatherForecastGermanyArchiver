@@ -38,12 +38,12 @@ async def main():
         
             #break
 
-asyncio.run(main())
-
 try:
     with open('lastmod.txt', 'w+', encoding='utf-8') as fh:
         fh.write(str(datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
 except Exception as e:
     logging.error(f"failed to write to lastmod.txt -> error: {e}")
+
+asyncio.run(main())
 
 logging.info("INFO: completed run after %s seconds" % (time.time() - start_time))
