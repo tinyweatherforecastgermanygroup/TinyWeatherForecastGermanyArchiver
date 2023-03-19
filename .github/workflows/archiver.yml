@@ -24,17 +24,17 @@ jobs:
         run: git clone https://github.com/tinyweatherforecastgermanygroup/TinyWeatherForecastGermanyArchiver "TinyWeatherForecastGermanyArchiver"
       
       - name: update packages
-        run: timeout 120s sudo apt update
+        run: timeout 120s sudo apt update || true
 
       - name: upgrade packages
-        run: timeout 120s sudo apt upgrade -y
+        run: timeout 120s sudo apt upgrade -y || true
       
       - name: Setup Python 3.11
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
           cache: 'pip'
-          cache-dependency-path: requirements.txt
+          # cache-dependency-path: requirements.txt
       
       - name: upgrade pip
         run: python -m pip install --upgrade pip
