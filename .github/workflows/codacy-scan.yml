@@ -1,0 +1,41 @@
+name: codacy security scan
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: '5 2 2 * *'
+  
+  repository_dispatch: # run workflow on api request
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  codacy-scan:
+    name: codacy security scan
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the repository to the GitHub Actions runner
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Execute Codacy Analysis CLI and generate a SARIF output with the security issues identified during the analysis
+      - name: Run Codacy Analysis CLI
+        uses: codacy/codacy-analysis-cli-action@4.3.0
+        with:
+          output: results.sarif
+          format: sarif
+          # Adjust severity of non-security issues
+          gh-code-scanning-compat: true
+          # Force 0 exit code to allow SARIF file generation
+          # This will handover control about PR rejection to the GitHub side
+          max-allowed-issues: 2147483647
+
+      # Upload the SARIF file generated in the previous step
+      - name: Upload SARIF results file
+        uses: github/codeql-action/upload-sarif@v1
+        with:
+          sarif_file: results.sarif
