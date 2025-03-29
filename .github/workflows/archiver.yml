@@ -38,10 +38,7 @@ jobs:
           # cache-dependency-path: requirements.txt
       
       - name: upgrade pip
-        run: python -m pip install --upgrade pip
-        
-      - name: install virtualenv
-        run: pip install virtualenv
+        run: python -m pip install --upgrade pip wheel setuptools virtualenv
       
       - name: list directory contents
         run: ls -lisha
