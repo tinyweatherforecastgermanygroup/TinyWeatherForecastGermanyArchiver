@@ -1,5 +1,12 @@
 {
     "gitlens.telemetry.enabled": false,
     "redhat.telemetry.enabled": false,
-    "sonarlint.disableTelemetry": true
+    "sonarlint.disableTelemetry": true,
+    "cSpell.words": [
+        "Deutscher",
+        "Dube",
+        "Pawel",
+        "TWFG",
+        "Wetterdienst"
+    ]
 }
