@@ -1,16 +1,14 @@
 # TinyWeatherForecastGermanyArchiver
 
-[![archiver](https://img.shields.io/github/workflow/status/tinyweatherforecastgermanygroup/TinyWeatherForecastGermanyArchiver/archiver?label=archiver%20workflow&logo=github&style=for-the-badge)](https://github.com/tinyweatherforecastgermanygroup/TinyWeatherForecastGermanyArchiver/actions/workflows/archiver.yml)  [![F-Droid Store release version](https://img.shields.io/f-droid/v/de.kaffeemitkoffein.tinyweatherforecastgermany?color=%23efbb24&logo=fdroid&style=for-the-badge)](https://f-droid.org/packages/de.kaffeemitkoffein.tinyweatherforecastgermany) [![code license](https://img.shields.io/github/license/twfgcicdbot/TinyWeatherForecastGermanyMirror?style=for-the-badge&logo=github)](https://github.com/twfgcicdbot/TinyWeatherForecastGermanyMirror/blob/master/COPYING)
-
 tl;dr -> submit web sites ([`urls.txt`](https://github.com/tinyweatherforecastgermanygroup/TinyWeatherForecastGermanyArchiver/blob/main/urls.txt)) of  [**TinyWeatherForecastGermany**](https://codeberg.org/Starfish/TinyWeatherForecastGermany) (TWFG) to `web.archive.org`.
 
-[Tiny Weather Forecast Germany](https://tinyweatherforecastgermanygroup.gitlab.io/index/) is an android open source weather app focused on Germany developped by Pawel Dube ([@Starfish](https://codeberg.org/Starfish)) using [open data](https://opendata.dwd.de/) provided by Deutscher Wetterdienst (DWD).
+[Tiny Weather Forecast Germany](https://tinyweatherforecastgermanygroup.gitlab.io/index/) is an android open source weather app focused on Germany developed by Pawel Dube ([@Starfish](https://codeberg.org/Starfish)) using [open data](https://opendata.dwd.de/) provided by Deutscher Wetterdienst (DWD).
 
 The DWD is Germany's **national weather agency** (similiar to the **N**ational **O**ceanic **a**nd **A**tmospheric **A**dministration ([NOAA](https://www.noaa.gov/about-our-agency)) in the US).
 
 **Note**:
 
-*'TWFG'* is an inofficial abbreviation for ***T**iny **W**eather **F**orecast **G**ermany.*
+*'TWFG'* is an unofficial abbreviation for ***T**iny **W**eather **F**orecast **G**ermany.*
 
 ## Dependencies
 
@@ -25,11 +23,11 @@ This repository is licensed under **GPLv3** see [`LICENSE`](https://github.com/t
 The CI/CD script producing the reports displayed here is a ['GitHub action workflow'](https://github.com/tinyweatherforecastgermanygroup/TinyWeatherForecastGermanyArchiver/actions/workflows/archiver.yml) created by Jean-Luc Tibaux (->[@eUgEntOptIc44](https://gitlab.com/eUgEntOptIc44)).
 Feel free to use it as a inspiration for your own projects. I'd be very grateful if this was helpful to you. Please let me know if so.
 
-Please be aware that the code used here is by no means production-ready. Before using even parts of this in professional/commercial environments please double check against local laws and regulations that might apply. In general your mileage might **significantly** vary. Use only at your **own risk**. No guarantee or waranty of any kind provided.
+Please be aware that the code used here is by no means production-ready. Before using even parts of this in professional/commercial environments please double check against local laws and regulations that might apply. In general your mileage might **significantly** vary. Use only at your **own risk**. No guarantee or warranty of any kind provided.
 
 Please also see [this GitLab Pages page](https://tinyweatherforecastgermanygroup.gitlab.io/index/) containing references to all linked resources of [TinyWeatherForecastGermany](https://tinyweatherforecastgermanygroup.gitlab.io/index/).
 
-This project is **not affialited** with any of the following organizations: Codeberg, the DWD, Google, GitLab or GitHub or related individuals in any way. Named trademarks, brands and icons belong to their owners.
+This project is **not affiliated** with any of the following organizations: Codeberg, the DWD, Google, GitLab or GitHub or related individuals in any way. Named trademarks, brands and icons belong to their owners.
 
 ## Contributing
 
